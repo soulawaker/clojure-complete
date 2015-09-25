@@ -29,7 +29,10 @@ pdf 변환을 위해 asciidoctor-pdf gem을 설치한다.
 
  $ sudo gem install --pre asciidoctor-pdf
 
-
+여기서 ruby 버전이 2.0 이상 필요하다는 에러를 만날 수도 있다.
+이럴 경우 최신버전의 루비를 설치해야 하는데 RVM을 통해 자동으로 설치가능하다.
+아래의 "RVM 설치" 항목을 참조하기 바란다.
+ 
 == asciidoctor-pdf-cjk-kai_gen_gothic 설치
 
 asciidoctor-pdf만으로 pdf를 만들면 한글이 제대로 출력되지 않는다. 따라서
@@ -59,3 +62,28 @@ asciidoctor.js Chrome plugin을 설치한 후 크롬 브라우저 상에서 asci
 문서를 저장할 때마다 실시간(실제로는 2초 간격)으로 변경된 내용이 반영되어 나타나므로
 설치하는 것이 편리하다.
 
+
+== RVM 설치 (루비 버전이 낮다고 에러가 발생하는 경우에 권장)
+RVM 설치(https://rvm.io/rvm/install) 사이트에 나온 내용을 간략하게 제시한다.
+
+ $ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+ 
+ $ \curl -sSL https://get.rvm.io | bash
+ 
+설치 과정에서 자동으로 루비 최신버전을 찾아서 설치한다.
+ 
+기존의 터미널 창을 닫고 새로운 터미널 창을 열어서 아래의 작업을 수행한다.
+
+ $ source ~/.rvm/scripts/rvm
+ 
+설치가 잘 되었는지 확인한다.
+
+ $ type rvm | head -n 1
+ --> rvm is a function
+ 
+루비 버전 확인
+ 
+ $ ruby -v
+ --> ruby 2.2.1p85 (2015-02-26 revision 49769)
+ 
+이후 처음부터 asciidoctor 설치 과정을 진행한다.
