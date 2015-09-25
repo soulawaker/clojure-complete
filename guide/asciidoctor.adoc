@@ -31,7 +31,7 @@ pdf 변환을 위해 asciidoctor-pdf gem을 설치한다.
 
 여기서 ruby 버전이 2.0 이상 필요하다는 에러를 만날 수도 있다.
 이럴 경우 최신버전의 루비를 설치해야 하는데 RVM을 통해 자동으로 설치가능하다.
-아래의 "RVM 설치" 항목을 참조하기 바란다.
+아래의 "9. RVM 설치" 항목을 참조하기 바란다.
  
 == asciidoctor-pdf-cjk-kai_gen_gothic 설치
 
