@@ -86,4 +86,4 @@ RVM 설치(https://rvm.io/rvm/install) 사이트에 나온 내용을 간략하�
  $ ruby -v
  --> ruby 2.2.1p85 (2015-02-26 revision 49769)
  
-이후 처음부터 asciidoctor 설치 과정을 진행한다.
+이후 2번부터 asciidoctor 설치 과정을 진행한다.
